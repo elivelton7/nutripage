@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { trackClick } from '../lib/trackClick'
 
-const LOGO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/Gemini_Generated_Image_ossjsfossjsfossj.jfif'
+const LOGO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/logo01.jpeg'
 const WA_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '5514999999999'
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=Olá! Gostaria de agendar uma consulta nutricional.`
 
@@ -60,7 +60,7 @@ export default function Navbar() {
                         <img
                             src={LOGO_URL}
                             alt="NutriMariah"
-                            style={{ height: '52px', width: 'auto', objectFit: 'contain' }}
+                            style={{ height: '48px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply', display: 'block' }}
                         />
                     </a>
 

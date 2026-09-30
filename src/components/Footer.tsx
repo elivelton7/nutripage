@@ -2,7 +2,7 @@ import { Instagram, Mail, Phone } from 'lucide-react'
 import { trackClick } from '../lib/trackClick'
 
 
-const LOGO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/Gemini_Generated_Image_ossjsfossjsfossj.jfif'
+const LOGO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/logo01.jpeg'
 
 const C = {
     deep: '#14261C',
@@ -34,11 +34,21 @@ export default function Footer() {
 
                     {/* Brand */}
                     <div>
-                        <img
-                            src={LOGO_URL}
-                            alt="NutriMariah"
-                            style={{ height: '48px', width: 'auto', objectFit: 'contain', marginBottom: '20px' }}
-                        />
+                        <div style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            backgroundColor: '#FFFFFF',
+                            padding: '8px 16px',
+                            borderRadius: '12px',
+                            marginBottom: '20px',
+                            boxShadow: '0 2px 10px rgba(0,0,0,0.12)'
+                        }}>
+                            <img
+                                src={LOGO_URL}
+                                alt="NutriMariah"
+                                style={{ height: '36px', width: 'auto', objectFit: 'contain', display: 'block' }}
+                            />
+                        </div>
                         <p style={{ fontFamily: 'var(--font-sans)', fontSize: '14px', lineHeight: 1.8, color: C.muted, maxWidth: '240px' }}>
                             Nutrição clínica e esportiva baseada em evidências — para uma vida com mais saúde e leveza.
                         </p>
