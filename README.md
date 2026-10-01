@@ -1,32 +1,47 @@
-# React + TypeScript + Vite
+# Nutricionista Mariah Oréfice — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site de apresentação profissional da nutricionista Mariah Oréfice (CRN 3-57640), especializada em nutrição clínica e esportiva.
 
-Currently, two official plugins are available:
+## 🥗 Sobre
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Landing page moderna desenvolvida com **Vite + React + TypeScript + Tailwind CSS**, com foco em conversão via WhatsApp.
 
-## React Compiler
+### Seções
+- **Início** — Hero com foto e CTA principal
+- **Quem sou Eu** — Apresentação profissional
+- **Método Performa** — Acompanhamento nutricional personalizado
+- **Avaliações** — Depoimentos reais de pacientes do Google
+- **Contato** — Links de agendamento
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Deploy
 
-## Expanding the Oxlint configuration
+Projeto hospedado na [Vercel](https://vercel.com). Deploy automático a cada push na branch `main`.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠 Tecnologias
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- [Vite](https://vitejs.dev/)
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
+- [Supabase](https://supabase.com/) — Storage de imagens e analytics
+
+## 📦 Rodar localmente
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Acesse em `http://localhost:5174`
+
+## 📁 Estrutura
+
+```
+src/
+├── components/   # Navbar, Footer, FadeUp, PhotoPlaceholder...
+├── sections/     # HeroSection, AboutSection, ServicesSection...
+├── lib/          # Supabase client, trackClick
+└── assets/       # Logo e imagens locais
+```
