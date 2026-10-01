@@ -112,9 +112,9 @@ export default function Navbar() {
                         </a>
                     </div>
 
-                    {/* Mobile hamburger */}
+                    {/* Mobile hamburger — só aparece abaixo de md */}
                     <button
-                        className="md:hidden"
+                        className="flex md:hidden"
                         onClick={() => setMenuOpen(!menuOpen)}
                         style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '8px', color: C.deep }}
                         aria-label="Menu"
@@ -125,7 +125,7 @@ export default function Navbar() {
 
                 {/* Mobile dropdown */}
                 <div style={{
-                    maxHeight: menuOpen ? '360px' : '0',
+                    maxHeight: menuOpen ? '500px' : '0',
                     overflow: 'hidden',
                     transition: 'max-height 0.35s ease',
                 }} className="md:hidden">
