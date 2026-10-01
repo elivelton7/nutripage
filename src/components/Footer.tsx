@@ -1,8 +1,6 @@
 import { Instagram, Mail, Phone } from 'lucide-react'
 import { trackClick } from '../lib/trackClick'
-
-
-const LOGO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/logo01.jpeg'
+import logoImg from '../assets/logo.png'
 
 const C = {
     deep: '#14261C',
@@ -44,7 +42,7 @@ export default function Footer() {
                             boxShadow: '0 2px 10px rgba(0,0,0,0.12)'
                         }}>
                             <img
-                                src={LOGO_URL}
+                                src={logoImg}
                                 alt="NutriMariah"
                                 style={{ height: '36px', width: 'auto', objectFit: 'contain', display: 'block' }}
                             />

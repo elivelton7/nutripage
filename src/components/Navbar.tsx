@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { trackClick } from '../lib/trackClick'
+import logoImg from '../assets/logo.png'
 
-const LOGO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/logo01.jpeg'
 const WA_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '5514999999999'
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=Olá! Gostaria de agendar uma consulta nutricional.`
 
@@ -58,9 +58,9 @@ export default function Navbar() {
                     <a href="#inicio" onClick={(e) => handleNavClick(e, '#inicio')}
                         style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
                         <img
-                            src={LOGO_URL}
+                            src={logoImg}
                             alt="NutriMariah"
-                            style={{ height: '48px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply', display: 'block' }}
+                            style={{ height: '48px', width: 'auto', objectFit: 'contain', display: 'block' }}
                         />
                     </a>
 
