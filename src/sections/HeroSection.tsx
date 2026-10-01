@@ -5,7 +5,7 @@ import { trackClick } from '../lib/trackClick'
 
 const WA_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '5514999999999'
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=Olá! Gostaria de agendar uma consulta nutricional.`
-const PHOTO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/mariah%20colorido.jpg'
+const PHOTO_URL = 'https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/pagina%20inicial.jpg'
 
 const C = {
     deep: '#14261C',
@@ -148,26 +148,8 @@ export default function HeroSection() {
                                     boxShadow: '0 20px 60px rgba(20,38,28,0.14)',
                                 }}
                             />
-                            {/* Tag indicativa do espaço de foto */}
-                            <div
-                                style={{
-                                    position: 'absolute',
-                                    top: '18px',
-                                    right: '48px',
-                                    zIndex: 2,
-                                    backgroundColor: 'rgba(20, 38, 28, 0.85)',
-                                    backdropFilter: 'blur(8px)',
-                                    color: '#FAF8F5',
-                                    borderRadius: '100px',
-                                    padding: '6px 14px',
-                                    fontSize: '11px',
-                                    fontWeight: 500,
-                                    letterSpacing: '0.04em',
-                                    border: '1px solid rgba(255,255,255,0.2)',
-                                }}
-                            >
-                                📸 Espaço Reservado · Foto Hero
-                            </div>
+
+
                             {/* Floating stat */}
                             <div style={{
                                 position: 'absolute', bottom: '48px', left: '-20px', zIndex: 2,

@@ -160,6 +160,7 @@ export default function ServicesSection() {
                                 sublabel="Imagem mostrando rotina de treinos, esporte ou atendimento clínico"
                                 dimensions="Recomendado: 800 x 600px (4:3) ou 800 x 800px"
                                 aspectRatio="4/3"
+                                currentSrc="https://xqppzwzeykwlitwzutcn.supabase.co/storage/v1/object/public/imagens/foto%20treino.jpg"
                                 style={{
                                     border: '1.5px dashed #A3B899',
                                     backgroundColor: '#FFFFFF',

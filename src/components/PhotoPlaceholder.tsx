@@ -36,25 +36,11 @@ export default function PhotoPlaceholder({
             }}
         >
             {currentSrc ? (
-                <>
-                    <img
-                        src={currentSrc}
-                        alt={label}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                    {/* Badge indicativo de espaço reservado para troca */}
-                    <div
-                        className="absolute bottom-4 left-4 right-4 bg-[#14261C]/85 backdrop-blur-md text-[#FAF8F5] py-2 px-3 rounded-xl border border-white/20 flex items-center justify-between text-xs"
-                    >
-                        <div className="flex items-center gap-2 truncate">
-                            <Camera size={14} className="text-[#8BA898] shrink-0" />
-                            <span className="font-medium truncate">{label}</span>
-                        </div>
-                        <span className="text-[10px] text-[#A3B899] uppercase tracking-wider shrink-0 ml-2">
-                            Espaço Reservado
-                        </span>
-                    </div>
-                </>
+                <img
+                    src={currentSrc}
+                    alt={label}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
             ) : (
                 <div className="flex flex-col items-center justify-center p-8 text-center max-w-sm">
                     {/* Ícone estilizado */}
