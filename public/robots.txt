@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /insights/
+
+Sitemap: https://www.mariahnutri.com.br/sitemap.xml

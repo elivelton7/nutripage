@@ -129,7 +129,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* ── Right: Photo ── */}
-                    <FadeUp delay={0.15} className="hidden lg:block">
+                    <FadeUp delay={0.15}>
                         <div style={{ position: 'relative', paddingBottom: '32px', paddingRight: '32px' }}>
                             {/* Decorative block behind photo */}
                             <div style={{
@@ -141,7 +141,7 @@ export default function HeroSection() {
                                 src={PHOTO_URL}
                                 alt="Mariah, nutricionista esportiva"
                                 style={{
-                                    width: '100%', height: '560px',
+                                    width: '100%', height: 'clamp(380px, 110vw, 560px)',
                                     objectFit: 'cover', objectPosition: 'top center',
                                     borderRadius: '18px',
                                     position: 'relative', zIndex: 1,
