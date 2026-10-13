@@ -1,6 +1,17 @@
 import { Star, ExternalLink } from 'lucide-react'
 import FadeUp from '../components/FadeUp'
 import SectionDivider from '../components/SectionDivider'
+import reviewsData from '../data/reviews.json'
+
+interface Review {
+    id: number
+    name: string
+    date: string
+    rating: number
+    initials: string
+    color: string
+    comment: string
+}
 
 const GOOGLE_PROFILE_URL = 'https://maps.app.goo.gl/RN1yD8QGsSDJAQk66'
 
@@ -13,44 +24,8 @@ const C = {
     border: '#E0DBD4',
 }
 
-const reviews = [
-    {
-        id: 1,
-        name: 'Jéssica Corrêa',
-        date: 'Avaliação no Google',
-        rating: 5,
-        initials: 'JC',
-        color: '#DDE8D8',
-        comment: 'A melhor de jauuuuu ✨💪🏼 confio de olhos fechados!'
-    },
-    {
-        id: 2,
-        name: 'Marina Migliorucci',
-        date: 'Avaliação no Google',
-        rating: 5,
-        initials: 'MM',
-        color: '#E8DDD8',
-        comment: 'A Mariah faz um trabalho incrível. Ela conseguiu me ajudar a mudar a minha alimentação e estamos vendo resultados lindos na minha saúde. Hoje tenho muito mais qualidade de vida e como super bem.'
-    },
-    {
-        id: 3,
-        name: 'Ana Clara',
-        date: 'Avaliação no Google',
-        rating: 5,
-        initials: 'AC',
-        color: '#D8DEE8',
-        comment: 'A Mariah é uma profissional excepcional. Seu consultório é um espaço cuidadosamente projetado para proporcionar um ambiente aconchegante e acolhedor aos pacientes. Mariah me ofereceu uma experiência completa e muito positiva.'
-    },
-    {
-        id: 4,
-        name: 'Cassia Castro',
-        date: 'Avaliação no Google',
-        rating: 5,
-        initials: 'CC',
-        color: '#E8D8E0',
-        comment: 'Recomendo de olhos fechados!! Uma ótima profissional que me ajudou a fazer melhores escolhas na alimentação para atingir melhores resultados!! 🖤'
-    },
-]
+// Atualizado automaticamente toda semana (scripts/update-reviews.mjs via GitHub Actions)
+const reviews: Review[] = reviewsData
 
 function Stars({ count }: { count: number }) {
     return (
